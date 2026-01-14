@@ -1,0 +1,57 @@
+# Environment variables - NEVER commit API keys!
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Skills output
+traces/
+runs/
+*.jsonl
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing and internal files
+test_skill_logic.sh
+TEST_RESULTS.md
+POLISH_PLAN.md
+ACTION_PLAN.md
+BENCHMARK_INTEGRATION.md
+IMPLEMENTATION_SUMMARY.md
+PRE_RELEASE_REVIEW.md
+PRE_RELEASE_REVIEW_PROMPT.md
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+tmp/
+temp/

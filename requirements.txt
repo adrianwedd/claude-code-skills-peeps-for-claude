@@ -1,0 +1,7 @@
+# Python dependencies for Claude AI Skills
+# Install with: pip install -r requirements.txt
+
+# Required for benchmark skills (compare-models, benchmark-http)
+requests>=2.31.0
+
+# Note: Other dependencies (json, pathlib, datetime, etc.) are in Python standard library
