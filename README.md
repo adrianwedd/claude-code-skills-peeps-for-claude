@@ -120,21 +120,53 @@ export OPENROUTER_API_KEY="sk-or-v1-your-key-here"
 echo 'export OPENROUTER_API_KEY="sk-or-v1-your-key-here"' >> ~/.bashrc
 ```
 
-**For `/ask-codex` (OpenAI Codex):**
+**For `/ask-codex` (OpenAI Codex) - OPTIONAL:**
+
+The `/ask-codex` skill requires the `codex-cli` tool from OpenAI.
+
 ```bash
-# Install codex-cli (platform-specific)
+# 1. Install codex-cli
 npm install -g codex-cli
-# or
-pip install codex-cli
-# Configure with your OpenAI API key
+
+# 2. Get your OpenAI API key
+# Go to: https://platform.openai.com/api-keys
+# Click "Create new secret key"
+
+# 3. Configure codex-cli
+export OPENAI_API_KEY="sk-your-openai-key-here"
+
+# Or add to your shell profile
+echo 'export OPENAI_API_KEY="sk-your-openai-key-here"' >> ~/.bashrc
+
+# 4. Verify it works
+codex --version
 ```
 
-**For `/ask-gemini` (Google Gemini):**
+**Note:** If you don't need `/ask-codex`, you can skip this step. The other skills will still work.
+
+**For `/ask-gemini` (Google Gemini) - OPTIONAL:**
+
+The `/ask-gemini` skill requires the official Google Gemini CLI.
+
 ```bash
-# Install gemini-cli
+# 1. Install gemini-cli
 npm install -g @google-cloud/generative-ai-cli
-# Configure with your Gemini API key
+
+# 2. Get your Gemini API key
+# Go to: https://aistudio.google.com/app/apikey
+# Click "Create API key"
+
+# 3. Configure gemini-cli
+export GEMINI_API_KEY="your-gemini-key-here"
+
+# Or add to your shell profile
+echo 'export GEMINI_API_KEY="your-gemini-key-here"' >> ~/.bashrc
+
+# 4. Verify it works
+gemini --version
 ```
+
+**Note:** If you don't need `/ask-gemini`, you can skip this step. The other skills will still work.
 
 **For advanced skills (`/compare-models`, `/benchmark-http`):**
 ```bash
