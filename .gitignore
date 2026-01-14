@@ -46,6 +46,10 @@ BENCHMARK_INTEGRATION.md
 IMPLEMENTATION_SUMMARY.md
 PRE_RELEASE_REVIEW.md
 PRE_RELEASE_REVIEW_PROMPT.md
+LAUNCH_READY.md
+
+# Claude Code local settings
+.claude/settings.local.json
 
 # Logs
 *.log
